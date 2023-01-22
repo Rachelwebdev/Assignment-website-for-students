@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 body {
   width: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Nav Bar */
@@ -19,7 +19,6 @@ body {
   align-items: center;
   box-shadow: -9px 15px 15px -6px rgba(227, 162, 88, 0.56);
   padding: 1rem;
-  margin-bottom: 2rem;
 }
 
 .navMenu {
@@ -40,7 +39,97 @@ body {
 
 .navMenu li a:hover {
   cursor: pointer;
-  color: rgb(222, 134, 33);
+  color: rgb(191, 6, 6);
   font-size: 1.5rem;
   font-weight: 800;
+}
+
+/* Main Sections */
+
+/* Section 1 */
+section {
+  padding: 3rem;
+  border-bottom: 1px solid rgb(222, 134, 33);
+}
+
+#main-heading {
+  padding-bottom: 2rem;
+  text-align: center;
+  color: rgb(222, 134, 33);
+  animation-duration: 1.75s;
+  animation-name: slidein;
+}
+
+/* @keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+
+.intro-description {
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+.guidelines-heading,
+.Note,
+.grading-heading,
+.presentation-heading {
+  padding-bottom: 1rem;
+  color: rgb(222, 134, 33);
+  text-decoration: underline;
+}
+
+.guidelines-list,
+.note-list,
+.grading-list,
+.presentation-list {
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.guidelines-list,
+.grading-list,
+.presentation-list {
+  list-style-type: circle;
+}
+
+.note-description {
+  color: rgb(240, 184, 121);
+  font-weight: 800;
+}
+
+.total-marks {
+  color: rgb(191, 6, 6);
+  text-decoration: underline;
+}
+
+.submit-link {
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: 2px solid rgb(240, 184, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 2rem auto;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: rgb(240, 184, 121);
+  transition: 500ms ease-in-out;
+}
+
+.submit-link:hover {
+  font-weight: 800;
+  cursor: pointer;
+  color: rgb(191, 6, 6);
+  font-size: 1.5rem;
 }
