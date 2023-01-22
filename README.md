@@ -56,7 +56,7 @@ This project is built for a lecturer in the RAK Medical and Health Sciences Univ
 
 >
 
-- [Live Demo Link]()
+- [Live Demo Link](https://adult-health-nursing-assignment.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
