@@ -13,20 +13,14 @@
       <img class="logo" src="./RAK-logo.png" alt="RAK University Logo" />
       <nav id="navBar">
         <ul class="navMenu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="submit.html">Submit</a></li>
-          <li><a href="grouping.html">Groupings</a></li>
+          <li><a href="#assignment">Assignment</a></li>
+          <li><a href="#">Groupings</a></li>
         </ul>
       </nav>
-      <div class="hamburgerMenu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
     </header>
 
     <!-- main section with 3 different sections -->
-    <main class="main-sections">
+    <main class="main-sections" id="assignment">
       <!-- Section 1 for Introduction -->
       <section id="introduction">
         <h2 id="main-heading">Adult Health Nursing 2: Group Assignment 2</h2>
@@ -96,7 +90,27 @@
         </ul>
         <h5 class="total-marks">Total 20 marks</h5>
       </section>
-      <a class="submit-link" href="#">SUBMIT HERE👇</a>
+      <!-- Submit Form -->
+      <section id="form-section">
+        <h3 class="submission-heading">Assignment Submission Form</h3>
+        <!-- Form -->
+        <form
+          enctype="multipart/form-data"
+          action="https://formspree.io/f/mjvdklra"
+          method="POST"
+          id="form"
+        >
+          <label for="group">Group Number</label>
+          <input type="text" name="group-name" id="group-name" />
+          <label for="title">Project Title</label>
+          <input type="text" name="assignment-title" id="group-name" />
+          <h4 class="team-members">Group Members</h4>
+          <ol class="members-list"></ol>
+          <button class="add-btn">+</button>
+          <input type="file" name="upload" name="file" id="file" />
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <script src="index.js"></script>
   </body>
