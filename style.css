@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Nav Bar */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -9px 15px 15px -6px rgba(227, 162, 88, 0.56);
+  padding: 0.2rem 0.5rem;
+}
+
+.logo {
+  width: 10%;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: rgb(222, 134, 33);
+  font-size: 0.8rem;
+  transition: 500ms ease-in-out;
+}
+
+.navMenu li a:hover {
+  cursor: pointer;
+  color: rgb(196, 123, 6);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* Main Sections */
+
+/* Section 1 */
+section {
+  padding: 3rem;
+  border-bottom: 1px solid rgb(222, 134, 33);
+}
+
+#main-heading {
+  padding-bottom: 2rem;
+  text-align: center;
+  color: rgb(222, 134, 33);
+  animation-duration: 1.75s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.intro-description {
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+.guidelines-heading,
+.Note,
+.grading-heading,
+.presentation-heading {
+  padding-bottom: 1rem;
+  color: rgb(222, 134, 33);
+  text-decoration: underline;
+}
+
+.guidelines-list,
+.note-list,
+.grading-list,
+.presentation-list {
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.guidelines-list,
+.grading-list,
+.presentation-list {
+  list-style-type: circle;
+}
+
+.note-description {
+  color: rgb(240, 184, 121);
+  font-weight: 800;
+}
+
+.total-marks {
+  color: rgb(191, 6, 6);
+  text-decoration: underline;
+}
+
+.submit-link {
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: 2px solid rgb(240, 184, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 2rem auto;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: rgb(240, 184, 121);
+  transition: 500ms ease-in-out;
+}
+
+.submit-link:hover {
+  font-weight: 800;
+  cursor: pointer;
+  color: rgb(191, 6, 6);
+  font-size: 1.5rem;
+  width: 60%;
+}
+
+/* Form Section */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.5rem;
+}
+
+label {
+  color: rgb(222, 134, 33);
+}
+
+.team-members {
+  color: rgb(222, 134, 33);
+  text-decoration: underline;
+}
+
+input {
+  width: 70%;
+  outline: none;
+  padding: 0.5rem;
+}
+
+input[type="text"]:focus {
+  border: 2px solid rgb(222, 134, 33);
+  border-radius: 6px;
+}
+
+.add-btn {
+  width: 10%;
+  background-color: rgb(222, 134, 33);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+.add-btn:hover {
+  color: rgb(222, 134, 33);
+  background-color: #fff;
+  border: 2px solid rgb(222, 134, 33);
+  font-size: 1.2rem;
+  width: 15%;
+}
+
+input[type="file"] {
+  color: rgb(222, 134, 33);
+}
+
+.submit-btn {
+  background-color: rgb(222, 134, 33);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  width: 40%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+.submit-btn:hover {
+  color: rgb(222, 134, 33);
+  background-color: #fff;
+  border: 2px solid rgb(222, 134, 33);
+  font-size: 1.2rem;
+}
+
+.name-list-input {
+  margin-bottom: 1rem;
+}
+
+.submission-heading {
+  text-decoration: underline;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: rgb(222, 134, 33);
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  .logo {
+    width: 5%;
+  }
+
+  .navMenu li a {
+    font-size: 1.2rem;
+  }
+}
