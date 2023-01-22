@@ -25,8 +25,8 @@
 
 # 📖 [Assignment-website-for-students] <a name="about-project"></a>
 
-**[Assignment-website-for-students]** is a website which has 3 pages. The home page which diplays the questions that the students need to answer. It has a submit button which leads them to the submit page which has a form where they fill a form with their details and they can add the file to their solution. The Groupings pages displays the grouping where each students are placed because it's a group assignment.
-This project is built for a lecturer in the RAK Medical and Health Sciences University, College of Nursing to share with her students.
+**[Assignment-website-for-students]** is a website which diplays the questions for assignment. It has a submission form at the bottom of the page to submit the stolution in form of a file. I used formspree to receive the submission details and file uploads. The Groupings nav link leads to an outer page to display the grouping where each students are placed.
+This project is built for a lecturer in the RAK Medical and Health Sciences University, College of Nursing, United Arab Emirates to share with her students.
 
 ## 🛠 Built With <a name="built-with"></a>
 
