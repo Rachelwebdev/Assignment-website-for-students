@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+/* Nav Bar */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -9px 15px 15px -6px rgba(227, 162, 88, 0.56);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding-right: 1.5rem;
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: rgb(222, 134, 33);
+  font-size: 1.2rem;
+  transition: 500ms ease-in-out;
+}
+
+.navMenu li a:hover {
+  cursor: pointer;
+  color: rgb(222, 134, 33);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
