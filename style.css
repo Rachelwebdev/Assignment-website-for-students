@@ -21,6 +21,10 @@ body {
   padding: 1rem;
 }
 
+.logo {
+  width: 10%;
+}
+
 .navMenu {
   display: flex;
   justify-content: center;
@@ -39,9 +43,45 @@ body {
 
 .navMenu li a:hover {
   cursor: pointer;
-  color: rgb(191, 6, 6);
+  color: rgb(196, 123, 6);
   font-size: 1.5rem;
   font-weight: 800;
+}
+
+/* Hamburger menu */
+#navBar {
+  /* display: none; */
+}
+
+.hamburgerMenu {
+  margin-right: 24px;
+}
+
+.hamburgerMenu:hover {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(222, 134, 33);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #67798e;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798e;
 }
 
 /* Main Sections */
@@ -119,7 +159,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 40%;
   margin: 2rem auto;
   padding: 10px 20px;
   border-radius: 4px;
@@ -132,4 +172,5 @@ section {
   cursor: pointer;
   color: rgb(191, 6, 6);
   font-size: 1.5rem;
+  width: 60%;
 }
