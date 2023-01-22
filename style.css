@@ -221,3 +221,15 @@ input[type="file"] {
   text-align: center;
   color: rgb(222, 134, 33);
 }
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  .logo {
+    width: 5%;
+  }
+
+  .navMenu li a {
+    font-size: 1.2rem;
+  }
+}
